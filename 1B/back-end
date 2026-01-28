@@ -1,2 +1,12 @@
 /// '__filename' é uma variável especial que guarda o caminho completo deste arquivo no disco
 console.log("Este arquivo está localizado em: " + __filename);
+// 'fs' C) o mC3dulo de File System (Sistema de Arquivos)
+const fs = require('fs');
+// O comando abaixo cria (ou sobrescreve) um arquivo chamado 'vazio.txt' com conteC:do vazio ('')
+fs.writeFileSync('vazio.txt', '');
+console.log("Arquivo criado no teu computador!");
+// 'require' serve para importar mC3dulos (ferramentas) que jC! vC*m com o Node
+const os = require('os'); // Importa o mC3dulo de Sistema Operacional (OS)
+console.log("Utilizador atual: " + os.userInfo().username);
+// '__filename' C) uma variC!vel especial que guarda o caminho completo deste arquivo no disco
+console.log("Este arquivo estC! localizado em: " + __filename);
